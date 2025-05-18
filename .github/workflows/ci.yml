@@ -10,7 +10,7 @@ jobs:
 
   deploy:
     needs: ci
-    uses: VenkatBheemireddyOrg/github-reusable-actions/.github/workflows/ci.yml@main
+    uses: VenkatBheemireddyOrg/github-reusable-actions/.github/workflows/deploy.yml@main
     with:
       component: payment
 
