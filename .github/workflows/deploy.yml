@@ -1,8 +1,0 @@
-name: Payment Deployment
-on: [push, workflow_dispatch]
-jobs:
-  deploy:
-    uses: VenkatBheemireddyOrg/github-reusable-actions/.github/workflows/ci.yml@main
-    with:
-      component: payment     #with block is to pass parameter
-

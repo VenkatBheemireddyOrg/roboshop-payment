@@ -1,0 +1,16 @@
+name: Payment CICD
+run-name: Payment CICD
+on: [push]
+jobs:
+  ci:
+    uses: VenkatBheemireddyOrg/github-reusable-actions/.github/workflows/ci.yml@main
+    with:
+      component: payment
+      appType: python
+
+  deploy:
+    needs: ci
+    uses: VenkatBheemireddyOrg/github-reusable-actions/.github/workflows/deploy.yml@main
+    with:
+      component: payment
+
